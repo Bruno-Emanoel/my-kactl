@@ -5,7 +5,7 @@
  * Source: eu
  * Description: algoritmo de euclides extendido
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 ll itgcd(ll a, ll b, ll &x, ll &y) {
 	ll px = 0, py = 1, p = b, g = a;

@@ -5,7 +5,7 @@
  * Source: eu
  * Description: segtree com lazy propagation
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 struct node{
     ll val = 0;

@@ -5,7 +5,7 @@
  * Source: eu
  * Description: diz se existe subset cujo xor = cara
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 namespace XorBasis {
   constexpr ll LOGN = 20;

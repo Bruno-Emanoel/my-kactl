@@ -4,8 +4,8 @@
  * License: Nao
  * Source: eu
  * Description: automato do kmp com suporte para push e pop
- * Time: O(cada operação),
- * Status: na fé
+ * Time: O(cada operacao),
+ * Status: na fe
  */
 constexpr ll RAN = 'z'-'a'+1;
 class KMPAuth {

@@ -3,9 +3,9 @@
  * Date: 2026-08-13
  * License: Nao
  * Source: eu
- * Description: encontra solução para diofantina
+ * Description: encontra solucao para diofantina
  * Time: O(logn),
- * Status: na fé
+ * Status: na fe
  */
 bool find_any_solution(int a, int b, int c, int &x0, int &y0, int &g) {
     g = itgcd(abs(a), abs(b), x0, y0);

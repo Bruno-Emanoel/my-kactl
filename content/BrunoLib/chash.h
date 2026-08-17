@@ -5,7 +5,7 @@
  * Source: eu
  * Description: hash customizado
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 struct customHash {
   static unsigned ll splitmix64(unsigned ll x) {

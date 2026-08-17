@@ -3,9 +3,9 @@
  * Date: 2026-08-13
  * License: Nao
  * Source: eu
- * Description: stack e queue com operações de olhar mínimo/máximo
+ * Description: stack e queue com operacoes de olhar minimo/maximo
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 struct minStack {
 struct node {

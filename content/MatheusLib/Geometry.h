@@ -89,7 +89,7 @@ vetor closestPoint(line l, vetor m) {
 double distToPoint(line l,vetor p) {
     vetor close=closestPoint(l,p);
     close = close-p;
-    return mod(close); //posso retornar sqmod(close) se eu quiser só comparar distâncias
+    return mod(close); //posso retornar sqmod(close) se eu quiser so comparar distancias
 }
 double findt(line l, vetor p){
     vetor w = p-l.point;

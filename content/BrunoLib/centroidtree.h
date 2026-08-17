@@ -4,9 +4,9 @@
  * License: Nao
  * Source: eu
  * Description: constroi a arvore de centroid
- * Essa árvore tem altura O(logn). é possível fazer queries em range sem update.
+ * Essa arvore tem altura O(logn). e possivel fazer queries em range sem update.
  * Time: O(Nlogn),
- * Status: na fé
+ * Status: na fe
  */
 vll t[MAXN];
 vpll centree[MAXN];

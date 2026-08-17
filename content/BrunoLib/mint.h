@@ -3,9 +3,9 @@
  * Date: 2026-08-13
  * License: Nao
  * Source: eu
- * Description: wrapper para operações módulo
+ * Description: wrapper para operacoes modulo
  * Time: O(1),
- * Status: na fé
+ * Status: na fe
  */
 struct Mint {
   ll x=0;

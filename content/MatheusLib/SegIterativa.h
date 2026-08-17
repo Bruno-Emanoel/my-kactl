@@ -113,7 +113,7 @@ public:
         }
         return (ansL + ansR).sum;
     }
-    void point_update(int p, int val){ //ESSA PORRA NÃO FUNCIONA, É PARA SER ADAPTADO APENAS
+    void point_update(int p, int val){ //ESSA PORRA NAO FUNCIONA, EH PARA SER ADAPTADO APENAS
         int idx = p + n;
         segtree[idx] = Node(val);
         for (idx >>= 1; idx > 0; idx >>= 1) {

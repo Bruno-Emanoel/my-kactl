@@ -3,9 +3,9 @@
  * Date: 2026-08-13
  * License: Nao
  * Source: eu
- * Description: acha pontos de articulação
+ * Description: acha pontos de articulacao
  * Time: O(N+E),
- * Status: na fé
+ * Status: na fe
  */
 constexpr ll MAXN = 10;
 vll g[MAXN];
