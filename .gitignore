@@ -2,6 +2,12 @@
 *.aux
 *.log
 *.gch
+*.ptc
+*.out
+*.toc
+*.xdv
+content/kactl.pdf
+content/kactl.ptc
 a.out
 header.tmp
 .vscode
