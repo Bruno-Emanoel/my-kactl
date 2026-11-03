@@ -4,13 +4,13 @@
  * License: Nao
  * Source: eu
  * Description: constroi a arvore de centroid
- * Essa arvore tem altura O(logn). e possivel fazer queries em range sem update.
+ * Essa arvore tem altura O(logn). é possivel fazer queries de caminho sem update em O(nloglogn).
  * Time: O(Nlogn),
- * Status: na fe
+ * Status: testado
  */
 vll t[MAXN];
 vpll centree[MAXN];
-ll ans[MAXN], sz[MAXN];
+ll sz[MAXN];
 bitset<MAXN> removed;
 
 ll get_sz(ll u, ll p) {
@@ -42,4 +42,25 @@ void decompose(ll u) {
       next_level(w,centroid,centroid);
       decompose(w);
     }
+}
+
+ll query(ll a, ll b) { // example: distância entre dois nós
+  if(a==b)
+    return 0;
+  if(centree[a].size() > centree[b].size()) // a é mais alto
+    swap(a,b);
+  if(centree[a].size()!=centree[b].size()) { // a é ancestral
+    auto cara = centree[b][centree[a].size()];
+    if(cara.first == a)
+      return cara.second;
+  }
+  ll lv = centree[a].size()-1;
+  for(ll i = LOGN-1; i >= 0; --i) { // normalmente lOGN é 4 ou 5
+    if((1<<i) > lv)
+      continue;
+    if(centree[a][lv - (1<<i)].first == centree[b][lv - (1<<i)])
+      continue;
+    lv -= 1<<i;
+  }
+  return centree[a][lv-1].second + centree[a][lv-1].second;
 }
