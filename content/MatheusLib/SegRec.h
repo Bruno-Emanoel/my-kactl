@@ -38,6 +38,21 @@ class segmae{
         this->n =n;
         this->segtree = v<node>(4*n);
     }
+    segmae(v<int> &lista){
+        this->n = lista.size();
+        this->segtree = v<node>(n*4);
+        build(1,0,n-1,lista);
+    }
+    void build(int ind, int left, int right, v<int> &lista){
+        if(left == right){
+            segtree[ind].val=lista[left];
+            return;
+        }
+        int mid = left + (right-left)/2;
+        build(2*ind,left,mid,lista);
+        build(2*ind+1,mid+1,right,lista);
+        segtree[ind] = segtree[2*ind] + segtree[2*ind+1];
+    }
     void propagate(int i,int left, int right){
         if(left==right) return;
         int mid = (left + (right-left)/2);
