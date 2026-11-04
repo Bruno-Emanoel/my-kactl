@@ -48,5 +48,6 @@ Avoid vector, map. (use arrays/unordered_map)
 What do your teammates think about your algorithm?
 
 Memory limit exceeded:
+Are you recursing infinitely?
 What is the max amount of memory your algorithm should need?
 Are you clearing all data structures between test cases?

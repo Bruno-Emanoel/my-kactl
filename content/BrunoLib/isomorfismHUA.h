@@ -7,7 +7,7 @@
  * de subárvore um número associado a sequência de parentêses que a 
  * representa. O algoritmo associa valores aleatorios a cada sequência,
  * podendo haver colisão. A concatenação de asssinaturas é simulada através da
- * soma módulo 2^{64} - 1. Para um algoritmo determinístico, as sequências
+ * soma módulo $2^{64} - 1$. Para um algoritmo determinístico, as sequências
  * são armazenadas mais explicitamente, com um valor distinto para cada sequência.
  * Time: O(n) não determinístico, O(nlogn) determinístico
  */
